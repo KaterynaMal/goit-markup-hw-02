@@ -1,0 +1,94 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary--white-color: #ffffff;
+  --secondary--background-color: #f5f4fa;
+  --dark--background--color: #2f303a;
+  --footer--address--text--color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary--white-color);
+}
+
+/*Шапка сайту*/
+
+.logo {
+  color: var(--title-text-color);
+}
+
+.site-nav {
+  color: #212121;
+}
+
+.header-item {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.site-nav:hover,
+.site-nav:focus {
+  color: var(--accent-color);
+}
+
+.header-item:hover,
+.header-item:focus {
+  color: var(--accent-color);
+}
+
+/*Основний контент*/
+
+.baner-title {
+  color: var(--primary--white-color);
+  cursor: pointer;
+}
+
+.baner {
+  background-color: var(--dark--background--color);
+}
+
+.baner-btn {
+  cursor: pointer;
+  color: var(--primary--white-color);
+  background-color: var(--accent-color);
+}
+
+.btn {
+  cursor: pointer;
+  color: var(--title-text-color);
+  background-color: var(--secondary--background-color);
+}
+
+.btn:focus,
+.btn:hover {
+  color: var(--primary--white-color);
+  background-color: var(--accent-color);
+}
+
+.section-title,
+.list-title {
+  color: var(--title-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+/*footer*/
+
+.footer {
+  background-color: var(--dark--background--color);
+}
+
+.address,
+.footer-logo {
+  color: var(--primary--white-color);
+}
+.contacts {
+  color: var(--footer--address--text--color);
+}
