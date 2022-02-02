@@ -11,20 +11,35 @@
 body {
   color: var(--primary-text-color);
   background-color: var(--primary--white-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 /*Шапка сайту*/
 
 .logo {
   color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
 }
 
 .site-nav {
   color: #212121;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
 }
 
 .header-item {
   color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
 }
 
 .site-nav .link.current {
@@ -46,22 +61,43 @@ body {
 .baner-title {
   color: var(--primary--white-color);
   cursor: pointer;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .baner {
   background-color: var(--dark--background--color);
 }
 
-.baner-btn {
-  cursor: pointer;
-  color: var(--primary--white-color);
-  background-color: var(--accent-color);
-}
-
 .btn {
   cursor: pointer;
+  color: var(--accent-color);
+  background-color: var(--primary--white-color);
+  font-family: inherit;
+  text-align: center;
+}
+
+.btn.primary {
+  color: var(--primary--white-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+}
+
+.btn.secondary {
   color: var(--title-text-color);
   background-color: var(--secondary--background-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
 }
 
 .btn:focus,
@@ -88,7 +124,9 @@ body {
 .address,
 .footer-logo {
   color: var(--primary--white-color);
+  text-decoration: none;
 }
 .contacts {
   color: var(--footer--address--text--color);
+  text-decoration: none;
 }
