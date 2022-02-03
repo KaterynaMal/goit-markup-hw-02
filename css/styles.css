@@ -13,6 +13,9 @@ body {
   background-color: var(--primary--white-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /*Шапка сайту*/
@@ -26,20 +29,20 @@ body {
   text-decoration: none;
 }
 
-.site-nav {
-  color: #212121;
+.site-nav,
+.header-item {
   font-weight: 500;
-  font-size: 14px;
+
   line-height: 1.14;
   text-decoration: none;
 }
 
+.site-nav {
+  color: #212121;
+}
+
 .header-item {
   color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  text-decoration: none;
 }
 
 .site-nav .link.current {
@@ -79,14 +82,15 @@ body {
   background-color: var(--primary--white-color);
   font-family: inherit;
   text-align: center;
+  font-size: 16px;
 }
 
 .btn.primary {
   color: var(--primary--white-color);
   background-color: var(--accent-color);
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
+
+  line-height: 1.88;
   display: flex;
   align-items: center;
   letter-spacing: 0.06em;
@@ -96,7 +100,7 @@ body {
   color: var(--title-text-color);
   background-color: var(--secondary--background-color);
   font-weight: 500;
-  font-size: 16px;
+
   line-height: 1.62;
 }
 
@@ -111,8 +115,54 @@ body {
   color: var(--title-text-color);
 }
 
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.advant-title {
+  color: var(--title-text-color);
+}
+
+.advant-title,
+.list-title {
+  font-weight: 700;
+
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.work-list .list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
 .list {
   list-style: none;
+}
+
+.team-title,
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+}
+
+/*.team-position {
+  font-weight: 400;
+}*/
+
+.work-list .variaty {
+  font-size: 16px;
+  line-height: 1.88;
 }
 
 /*footer*/
@@ -122,11 +172,26 @@ body {
 }
 
 .address,
-.footer-logo {
+.footer .logo {
   color: var(--primary--white-color);
-  text-decoration: none;
 }
+
 .contacts {
   color: var(--footer--address--text--color);
+}
+
+.address,
+.contacts {
+  font-style: normal;
   text-decoration: none;
+}
+
+.address:focus,
+.address:hover {
+  color: var(--accent-color);
+}
+
+.contacts:hover,
+.contacts:focus {
+  color: var(--accent-color);
 }
