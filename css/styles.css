@@ -2,15 +2,16 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --primary--white-color: #ffffff;
-  --secondary--background-color: #f5f4fa;
-  --dark--background--color: #2f303a;
-  --footer--address--text--color: rgba(255, 255, 255, 0.6);
+  --primary-white-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --dark-background-color: #2f303a;
+  --footer-address-text-color: rgba(255, 255, 255, 0.6);
+  --btn-primary-accent-color: #188ce8;
 }
 
 body {
   color: var(--primary-text-color);
-  background-color: var(--primary--white-color);
+  background-color: var(--primary-white-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-weight: 400;
@@ -62,7 +63,7 @@ body {
 /*Основний контент*/
 
 .baner-title {
-  color: var(--primary--white-color);
+  color: var(--primary-white-color);
   cursor: pointer;
   font-weight: 900;
   font-size: 44px;
@@ -73,20 +74,20 @@ body {
 }
 
 .baner {
-  background-color: var(--dark--background--color);
+  background-color: var(--dark-background-color);
 }
 
 .btn {
   cursor: pointer;
   color: var(--accent-color);
-  background-color: var(--primary--white-color);
+  background-color: var(--primary-white-color);
   font-family: inherit;
   text-align: center;
   font-size: 16px;
 }
 
 .btn.primary {
-  color: var(--primary--white-color);
+  color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-weight: 700;
 
@@ -96,9 +97,14 @@ body {
   letter-spacing: 0.06em;
 }
 
+.btn.primary:focus,
+.btn.primary:hover {
+  background-color: var(--btn-primary-accent-color);
+}
+
 .btn.secondary {
   color: var(--title-text-color);
-  background-color: var(--secondary--background-color);
+  background-color: var(--secondary-background-color);
   font-weight: 500;
 
   line-height: 1.62;
@@ -106,7 +112,7 @@ body {
 
 .btn:focus,
 .btn:hover {
-  color: var(--primary--white-color);
+  color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
@@ -149,6 +155,7 @@ body {
 .team-position {
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 
 .team-title {
@@ -168,16 +175,16 @@ body {
 /*footer*/
 
 .footer {
-  background-color: var(--dark--background--color);
+  background-color: var(--dark-background-color);
 }
 
 .address,
 .footer .logo {
-  color: var(--primary--white-color);
+  color: var(--primary-white-color);
 }
 
 .contacts {
-  color: var(--footer--address--text--color);
+  color: var(--footer-address-text-color);
 }
 
 .address,
