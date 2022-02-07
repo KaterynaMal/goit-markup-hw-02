@@ -168,6 +168,14 @@ body {
   font-weight: 500;
 }
 
+.link {
+  text-decoration: none;
+}
+
+.variaty {
+  color: var(--primary-text-color);
+}
+
 /*.team-position {
   font-weight: 400;
 }*/
